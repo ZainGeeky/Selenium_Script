@@ -1,0 +1,60 @@
+{
+  "id": "3e022990-af3a-4b4a-8f5e-c4588bfa10e5",
+  "version": "2.0",
+  "name": "tender-and-notices",
+  "url": "https://mib.gov.in/tender-and-notices/circulars-orders",
+  "tests": [{
+    "id": "4ee817dd-ab5c-4671-9636-e7ecbd8b18b0",
+    "name": "Test_1",
+    "commands": [{
+      "id": "b61e350c-1e7f-41a7-94ad-6e0f6df24a39",
+      "comment": "",
+      "command": "open",
+      "target": "https://mib.gov.in/tender-and-notices/circulars-orders",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "406fbf9d-c728-49e7-9451-1bb2b6113947",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1431x794",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4fa324af-713f-4c15-9333-bcf022804cec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download (287.75 KB)",
+      "targets": [
+        ["linkText=Download (287.75 KB)", "linkText"],
+        ["css=tbody:nth-child(3) > .views-row-first > .views-field-field-attached > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Download (287.75 KB)')]", "xpath:link"],
+        ["xpath=//div[@id='block-system-main']/div/div/div/div[2]/table/tbody/tr/td[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mib.gov.in/sites/default/files/Sh.%20Raghavan%2C%20member%20of%20IIMC%20Society%20and%20EC%20%2804.09.2023%29.pdf')]", "xpath:href"],
+        ["xpath=//td[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Download (287.75 KB) ')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5063",
+      "windowTimeout": 2000
+    }, {
+      "id": "0afd8fd3-ea4d-450e-bcd0-2435744dcfbe",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5063}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "59096182-ea30-4f3d-8527-7622e4ca157c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://mib.gov.in/tender-and-notices/circulars-orders"],
+  "plugins": []
+}
